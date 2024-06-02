@@ -1,0 +1,220 @@
+/* barra de navegación */
+.navbar {
+    padding: 1rem;
+    background-color: #fff;
+}
+.nav-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+ul i {
+    font-size: 30px;
+    margin: 10px;
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Gochi Hand';
+}
+h2, h3, p {
+    font-family: 'Nunito', sans-serif;
+}
+.seccion-oscura {
+    background-color: rgb(43, 41, 80);
+    color: aliceblue;
+}
+.seccion-clara {
+    background-color: aliceblue;
+    color: black;
+}
+.seccion-titulo {
+    font-size: 3rem;
+    padding: 15px 0;
+    font-family: 'Gochi Hand';
+    text-align: center;
+}
+.seccion-texto {
+    font-size: 1.2rem;
+    text-align: center;
+}
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: rgb(40, 54, 99);
+}
+
+.texto-negro {
+    color: black;
+}
+.texto-blanco {
+    color: white;
+}
+
+
+/* sección hero */
+.hero {
+    background-color: aliceblue;
+    min-height: 250px;
+    text-align: center;
+}
+.hero-principal {
+    padding: 3rem;
+}
+.hero-imagen-principal {
+    height: 300px;
+    width: 300px;
+    margin-right: 17px;
+}
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: rgb(63, 66, 81);
+}
+
+/* sobre nosotros */
+.sobre-nosotros {
+    height: 500px;
+    padding: 10px;
+    
+}
+.contacto-wsap {
+    margin-top: 30px;
+}
+#qr {
+    width: 300px;
+}
+/* servicios */
+.servicios {
+    padding: 20px;
+    padding-top: 100px;
+    color: rgb(40, 43, 72);
+    box-sizing: border-box;
+}
+.servicios .row .columna {
+    height: 450px;
+    background: aliceblue;
+    border: 1px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.servicios-titulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges-contenedor {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge {
+    margin: 5px;
+}
+.servicios i {
+    font-size: 3rem;
+    color: rgb(40, 54, 99);
+    padding: 8px 19px;
+}
+.servicios .contenedor {
+    max-width: 600px;
+    align-items: center;
+}
+
+/* proyectos */
+.proyecto {
+    position: relative;
+}
+.proyectos-recientes {
+    padding: 40px;
+}
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all .2s ease;
+}
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.overlay {
+    transition: all .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto:hover img {
+    opacity: .2;
+}
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+.proyecto i, p{
+    font-size: 30px;
+    color: rgb(40, 54, 99);
+}
+.overlay .iconos-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    background-color: rgb(43, 41, 80);
+}
+.footer-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+.footer-redes-2 {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* responsive */
+@media screen and (min-width:700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+        
+    }
+}
+@media screen and (max-width: 1120px) {
+    .footer{
+        flex-direction: column;
+        height: 700px;
+    }
+}
